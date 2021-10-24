@@ -25,7 +25,7 @@ $ npm install
 
 
 # dev server with hot reload at http://localhost:3000
-$ npm run dev
+$ npm start
 ```
 
 Navigate to [http://localhost:3000](http://localhost:3000) to run the application
@@ -51,15 +51,15 @@ weather-app
 ├── src/  #project root
 │   ├── App.js
 │   ├── index.js
-|   ├── assets   # folder to store app resources
-|   └── redux-app   # redux data
-|       |-- action/     # folder to handle module action
-|       ├── components/  # views source
-|       ├── constants/  # contains constants
+│   ├── assets   # folder to store app resources
+│   └── redux-app   # redux data
+│       |-- action/     # folder to handle module action
+│       ├── components/  # views source
+│       ├── constants/  # contains constants
 │       ├── containers/  # container source - template layout
 │       ├── interfaces/  # object definitions
-|       |-- reducers/   # folder to handle dispatch payload
-|       |-- store/      # template state example 
+│       │-- reducers/   # folder to handle dispatch payload
+│       │-- store/      # template state example 
 │       └── services      # folder to handle helpers
 │           └── utils.js   # helper functions
 └── package.json
