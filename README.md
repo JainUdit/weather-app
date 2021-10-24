@@ -65,3 +65,9 @@ weather-app
 └── package.json
 
 ```
+
+## Deployment
+
+For quick access follow this link:
+
+[https://jainudit.github.io/weather-app/](https://jainudit.github.io/weather-app/)
