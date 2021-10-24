@@ -1,46 +1,67 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weather-App
 
-## Available Scripts
+Application to provide weather data and 24 hour forecast for cities input by the user.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+### Clone repo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+``` bash
+# clone the repo
+$ git clone https://github.com/JainUdit/weather-app.git
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# go into app's directory
+$ cd weather-app
 
-### `npm test`
+# install app's dependencies
+$ npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Basic usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+``` bash
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# dev server with hot reload at http://localhost:3000
+$ npm run dev
+```
 
-### `npm run eject`
+Navigate to [http://localhost:3000](http://localhost:3000) to run the application
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Build
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run `build` to build the project. The build artifacts will be stored in the `build/` directory.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# build for production with minification
+$ npm run build
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## What's included
 
-## Learn More
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+weather-app
+├── public/          #static files
+│   └── index.html   #html template
+│
+├── src/  #project root
+│   ├── App.js
+│   ├── index.js
+|   ├── assets   # folder to store app resources
+|   └── redux-app   # redux data
+|       |-- action/     # folder to handle module action
+|       ├── components/  # views source
+|       ├── constants/  # contains constants
+│       ├── containers/  # container source - template layout
+│       ├── interfaces/  # object definitions
+|       |-- reducers/   # folder to handle dispatch payload
+|       |-- store/      # template state example 
+│       └── services      # folder to handle helpers
+│           └── utils.js   # helper functions
+└── package.json
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
